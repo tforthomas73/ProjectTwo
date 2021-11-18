@@ -1,11 +1,13 @@
 "use strict";
-const hello = "hello world";
-console.log(hello);
 
+// DOM Stuff
+const logo = document.querySelector(".logo");
+logo.addEventListener("click", goHome);
 
-if(hello) console.log('hi');
-
-function homebFunc() {
-  window.location.href="";
+function goHome() {
+  window.location.href = "/";
 }
 
+function homebFunc() {
+  window.location.href = "";
+}
